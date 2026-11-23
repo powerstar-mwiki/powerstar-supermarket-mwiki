@@ -1,0 +1,1929 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Powerstar Supermarket - Annex Mwiki | Fresh Groceries, Deals &amp; Family Shopping</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for crisp retail, social, and navigation icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        emerald: {
+                            850: '#064e3b',
+                            950: '#022c22',
+                        }
+                    }
+                }
+            }
+        };
+    </script>
+    <style>
+        /* Subtle custom scrollbar and smooth transitions for drawers/modals */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-emerald-600 selection:text-white">
+
+    <!-- Top Executive & Multi-Platform Social Announcement Bar -->
+    <div class="bg-emerald-950 text-white text-xs py-2 px-4 border-b border-emerald-900">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex flex-wrap items-center justify-center sm:justify-start gap-2">
+                <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-extrabold bg-amber-400 text-slate-950">24+ YEARS OF VALUE</span>
+                <span class="font-medium text-emerald-100">Powerstar Annex Mwiki • Kasarani Mwiki Rd (<strong class="text-amber-300">QWG7+J62</strong>)</span>
+            </div>
+            <!-- Multi-Platform Social Links (YouTube, TikTok, Instagram, Facebook, X - Zero WhatsApp) -->
+            <div class="flex items-center gap-3.5 text-emerald-200">
+                <span class="hidden md:inline text-emerald-400 font-semibold">Watch Daily Deals:</span>
+                <a href="https://www.youtube.com/results?search_query=Powerstar+Supermarket+Nairobi" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="hover:text-red-400 transition flex items-center gap-1 font-semibold">
+                    <i class="fa-brands fa-youtube text-sm text-red-400"></i><span>YouTube</span>
+                </a>
+                <a href="https://www.tiktok.com/search?q=Powerstar%20Supermarket%20Nairobi" target="_blank" rel="noopener noreferrer" aria-label="TikTok" class="hover:text-white transition flex items-center gap-1 font-semibold">
+                    <i class="fa-brands fa-tiktok text-sm text-amber-300"></i><span>TikTok</span>
+                </a>
+                <a href="https://www.instagram.com/explore/tags/powerstarsupermarket/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="hover:text-pink-400 transition">
+                    <i class="fa-brands fa-instagram text-sm"></i>
+                </a>
+                <a href="https://www.facebook.com/search/top?q=Powerstar%20Supermarket" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="hover:text-blue-400 transition">
+                    <i class="fa-brands fa-facebook text-sm"></i>
+                </a>
+                <a href="https://x.com/search?q=Powerstar%20Supermarket" target="_blank" rel="noopener noreferrer" aria-label="X Twitter" class="hover:text-white transition">
+                    <i class="fa-brands fa-x-twitter text-sm"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Navigation Header -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 sm:h-20 gap-2">
+                <!-- Brand Logo -->
+                <a href="#" class="flex items-center gap-2.5 sm:gap-3 group shrink-0">
+                    <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-gradient-to-br from-emerald-800 to-emerald-600 flex items-center justify-center text-amber-400 shadow-md group-hover:scale-105 transition">
+                        <i class="fa-solid fa-star text-xl"></i>
+                    </div>
+                    <div>
+                        <span class="block font-display text-base sm:text-xl font-extrabold tracking-tight text-emerald-950 leading-none">POWERSTAR</span>
+                        <span class="block text-[10px] sm:text-[11px] font-bold tracking-wider text-amber-600 uppercase mt-0.5">Supermarket • Annex Mwiki</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden xl:flex items-center gap-6 text-sm font-semibold text-slate-600">
+                    <a href="#offers" class="hover:text-emerald-700 transition">Weekly Offers</a>
+                    <a href="#experience" class="hover:text-emerald-700 transition">Store &amp; Amenities</a>
+                    <a href="#social-hub" class="hover:text-emerald-700 transition">Social Hub</a>
+                    <a href="#reviews" class="hover:text-emerald-700 transition">Reviews (3.8★)</a>
+                    <a href="#location" class="hover:text-emerald-700 transition">Location</a>
+                </nav>
+
+                <!-- Control Panel Action Buttons -->
+                <div class="flex items-center gap-1.5 sm:gap-2.5">
+                    <!-- Admin Panel Button (Locked behind password 12345 for customers) -->
+                    <button
+                        id="adminPanelBtn"
+                        type="button"
+                        onclick="handleAdminPanelClick()"
+                        class="inline-flex items-center gap-1.5 px-3 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs sm:text-sm transition shadow-sm border border-slate-700"
+                        title="Open Admin Panel (Password Protected)"
+                    >
+                        <i id="adminLockIcon" class="fa-solid fa-lock text-amber-400"></i>
+                        <span id="adminPanelBtnText">Admin Panel</span>
+                    </button>
+
+                    <!-- Admin-only quick shortcuts (shown only when Admin is authenticated) -->
+                    <button
+                        id="adminPhotosBtn"
+                        type="button"
+                        onclick="handleCustomizeMediaClick('cover')"
+                        class="hidden md:inline-flex items-center gap-1.5 px-3 py-2.5 rounded-xl bg-amber-50 hover:bg-amber-100 text-amber-950 font-bold text-xs sm:text-sm transition border border-amber-300 shadow-sm"
+                        title="Upload Cover & Gallery Photos (Admin Only)"
+                    >
+                        <i class="fa-solid fa-camera-retro text-amber-600"></i>
+                        <span>Photos</span>
+                    </button>
+
+                    <button
+                        id="adminAddProdBtn"
+                        type="button"
+                        onclick="handleAddProductClick()"
+                        class="hidden sm:inline-flex items-center gap-1.5 px-3 py-2.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-extrabold text-xs sm:text-sm transition shadow-sm"
+                        title="Add Store Product (Admin Only)"
+                    >
+                        <i class="fa-solid fa-plus"></i>
+                        <span>Add Product</span>
+                    </button>
+
+                    <!-- Smart Cart Drawer Trigger -->
+                    <button id="openListBtn" type="button" class="relative inline-flex items-center gap-2 px-3.5 py-2.5 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-xs sm:text-sm transition shadow-md">
+                        <i class="fa-solid fa-cart-shopping text-amber-300"></i>
+                        <span class="hidden sm:inline">Cart</span>
+                        <span id="listBadge" class="inline-flex items-center justify-center min-w-[20px] h-5 px-1 text-xs font-extrabold rounded-full bg-amber-400 text-slate-950">0</span>
+                    </button>
+
+                    <!-- Mobile Menu Toggle -->
+                    <button id="mobileMenuBtn" type="button" aria-label="Toggle Menu" class="xl:hidden p-2.5 rounded-xl text-slate-700 hover:bg-slate-100 transition">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Navigation -->
+        <div id="mobileMenu" class="hidden xl:hidden bg-white border-t border-slate-100 px-4 pt-2 pb-5 space-y-1.5 shadow-lg">
+            <a href="#offers" class="block px-3 py-2.5 rounded-xl text-sm font-bold text-slate-700 hover:bg-emerald-50 hover:text-emerald-700">Weekly Offers &amp; Catalog</a>
+            <button type="button" onclick="handleAdminPanelClick(); closeMobileMenu();" class="w-full text-left px-3 py-2.5 rounded-xl text-sm font-bold text-slate-900 bg-slate-100 hover:bg-slate-200">
+                <i class="fa-solid fa-shield-halved text-amber-600 mr-1.5"></i> <span id="mobileAdminLabel">Admin Panel (Password Required)</span>
+            </button>
+            <button type="button" onclick="handleAddProductClick(); closeMobileMenu();" class="w-full text-left px-3 py-2.5 rounded-xl text-sm font-bold text-amber-950 bg-amber-50 hover:bg-amber-100">
+                <i class="fa-solid fa-plus-circle mr-1.5"></i> + Add Store Product (Admin)
+            </button>
+            <a href="#experience" class="block px-3 py-2.5 rounded-xl text-sm font-bold text-slate-700 hover:bg-emerald-50 hover:text-emerald-700">Store Amenities &amp; Bouncing Castle</a>
+            <a href="#social-hub" class="block px-3 py-2.5 rounded-xl text-sm font-bold text-slate-700 hover:bg-emerald-50 hover:text-emerald-700">YouTube, TikTok &amp; Social Deals</a>
+            <a href="#reviews" class="block px-3 py-2.5 rounded-xl text-sm font-bold text-slate-700 hover:bg-emerald-50 hover:text-emerald-700">Customer Reviews (3.8★)</a>
+            <a href="#location" class="block px-3 py-2.5 rounded-xl text-sm font-bold text-slate-700 hover:bg-emerald-50 hover:text-emerald-700">Location &amp; Sister Branches</a>
+        </div>
+    </header>
+
+    <!-- Active Admin Session Banner (Visible only when Admin is unlocked with password 12345) -->
+    <div id="adminSessionBanner" class="hidden bg-amber-400 text-slate-950 border-b border-amber-500 px-4 py-2.5">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-xs sm:text-sm font-bold">
+            <div class="flex items-center gap-2">
+                <span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-slate-950 text-amber-400 text-xs">
+                    <i class="fa-solid fa-unlock-keyhole"></i>
+                </span>
+                <span>ADMIN MODE ACTIVE: Only you can add/delete products and update cover or gallery photos. Customers see a read-only storefront.</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <button type="button" onclick="handleAddProductClick()" class="px-3 py-1 rounded-lg bg-emerald-800 hover:bg-emerald-900 text-white text-xs font-extrabold transition">
+                    + Add Product
+                </button>
+                <button type="button" onclick="handleCustomizeMediaClick('cover')" class="px-3 py-1 rounded-lg bg-white hover:bg-slate-100 text-slate-950 text-xs font-extrabold transition">
+                    Edit Photos
+                </button>
+                <button type="button" onclick="lockAdminSession()" class="px-3 py-1 rounded-lg bg-slate-950 hover:bg-slate-800 text-amber-300 text-xs font-extrabold transition">
+                    <i class="fa-solid fa-lock mr-1"></i> Lock Admin
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 1. EXECUTIVE HERO & CUSTOMIZABLE COVER SHOWCASE -->
+    <section class="relative overflow-hidden bg-gradient-to-br from-emerald-950 via-emerald-900 to-emerald-800 text-white">
+        <!-- Ambient glow accents -->
+        <div class="absolute inset-0 opacity-15 pointer-events-none">
+            <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-amber-400 blur-3xl"></div>
+            <div class="absolute bottom-0 left-10 w-80 h-80 rounded-full bg-emerald-400 blur-3xl"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+                <!-- Left Value Proposition -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/20 backdrop-blur-sm text-amber-300 text-xs font-bold">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Flagship Annex Mwiki • Kasarani Mwiki Rd (QWG7+J62)</span>
+                    </div>
+
+                    <h1 class="font-display text-3xl sm:text-5xl lg:text-[52px] font-extrabold tracking-tight leading-[1.12]">
+                        Unbeatable Prices, Fresh Finds &amp; <span class="text-amber-400">Family Fun</span> in Mwiki.
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-emerald-100 leading-relaxed">
+                        Backed by Powerstar Supermarket's <strong class="text-white">24+ years of trusted retail value</strong>, our Annex Mwiki branch brings you mega weekly offers, spacious dedicated parking with defined entry/exit lanes, an on-site bodaboda stage, and a kids' bouncing castle.
+                    </p>
+
+                    <!-- Primary Conversion CTAs -->
+                    <div class="flex flex-col sm:flex-row gap-3 pt-1">
+                        <a href="#offers" class="inline-flex items-center justify-center gap-2.5 px-6 py-4 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-extrabold text-sm sm:text-base shadow-lg shadow-amber-500/20 transition transform hover:-translate-y-0.5">
+                            <i class="fa-solid fa-tags"></i>
+                            <span>Shop Weekly Offers</span>
+                        </a>
+                        <button type="button" onclick="handleAdminPanelClick()" class="inline-flex items-center justify-center gap-2.5 px-6 py-4 rounded-xl bg-white/10 hover:bg-white/20 text-white border border-white/25 font-bold text-sm sm:text-base backdrop-blur-sm transition">
+                            <i class="fa-solid fa-shield-halved text-amber-400"></i>
+                            <span>Admin Panel</span>
+                        </button>
+                    </div>
+
+                    <!-- Executive Metrics Bar -->
+                    <div class="grid grid-cols-3 gap-4 pt-5 border-t border-emerald-800/80">
+                        <div>
+                            <div class="font-display text-xl sm:text-2xl font-extrabold text-amber-400">3.8 <span class="text-sm text-white">/ 5★</span></div>
+                            <div class="text-xs text-emerald-200">Google Verified Rating</div>
+                        </div>
+                        <div>
+                            <div class="font-display text-xl sm:text-2xl font-extrabold text-white">7AM–10PM</div>
+                            <div class="text-xs text-emerald-200">Open 7 Days a Week</div>
+                        </div>
+                        <div>
+                            <div class="font-display text-xl sm:text-2xl font-extrabold text-amber-400">100%</div>
+                            <div class="text-xs text-emerald-200">Parking &amp; Boda Stage</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Main Cover Photo Frame (Admin-Only Uploadable Cover Image) -->
+                <div class="lg:col-span-6">
+                    <div class="relative rounded-3xl overflow-hidden bg-emerald-950 border-2 border-emerald-600/60 shadow-2xl group">
+                        <!-- Cover Photo Display -->
+                        <div class="relative h-72 sm:h-96 w-full bg-emerald-950 overflow-hidden">
+                            <img
+                                id="heroCoverImg"
+                                src=""
+                                alt="Powerstar Supermarket Annex Mwiki Main Cover"
+                                class="w-full h-full object-cover transition duration-500 group-hover:scale-105"
+                            >
+                            <!-- Admin-gated "Change Cover Photo" Button -->
+                            <button
+                                type="button"
+                                onclick="handleCustomizeMediaClick('cover')"
+                                class="absolute top-4 right-4 inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-slate-950/85 hover:bg-amber-400 text-white hover:text-slate-950 border border-white/20 text-xs font-bold backdrop-blur-md shadow-lg transition"
+                            >
+                                <i class="fa-solid fa-camera"></i>
+                                <span>Change Cover Photo</span>
+                            </button>
+
+                            <!-- Live Store Status Pill -->
+                            <div class="absolute top-4 left-4 inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-950/85 border border-emerald-500/40 text-xs font-bold text-emerald-300 backdrop-blur-md">
+                                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                                <span>ANNEX MWIKI • OPEN NOW</span>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Hero Feature Caption -->
+                        <div class="p-5 sm:p-6 bg-gradient-to-r from-emerald-950 via-emerald-900 to-emerald-950 border-t border-emerald-800/80 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                            <div>
+                                <div class="flex items-center gap-2">
+                                    <span class="px-2 py-0.5 rounded bg-amber-400/20 text-amber-300 text-[11px] font-extrabold uppercase">Family-First Shopping</span>
+                                    <span class="text-xs text-emerald-300">Kasarani Mwiki Rd</span>
+                                </div>
+                                <h2 id="heroCaptionTitle" class="font-display text-lg font-bold text-white mt-1">Powerstar Supermarket - Annex Mwiki</h2>
+                                <p id="heroCaptionSub" class="text-xs sm:text-sm text-emerald-200 mt-0.5">Spacious parking, kids' bouncing castle &amp; daily mega savers under one roof.</p>
+                            </div>
+                            <button type="button" onclick="shareStorePromo('Powerstar Supermarket - Annex Mwiki')" class="shrink-0 inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-bold border border-white/15 transition">
+                                <i class="fa-solid fa-share-nodes text-amber-400"></i>
+                                <span>Share Store</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. WEEKLY OFFERS & ADMIN-PROTECTED "+ ADD NEW PRODUCT" CATALOG -->
+    <section id="offers" class="py-16 sm:py-20 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-8">
+                <div>
+                    <span class="text-xs font-extrabold uppercase tracking-widest text-emerald-800 bg-emerald-100 px-3 py-1 rounded-full">Live Store Catalog</span>
+                    <h2 class="mt-3 font-display text-3xl sm:text-4xl font-extrabold text-slate-900">Weekly Offers &amp; Featured Products</h2>
+                    <p class="mt-2 text-slate-600 max-w-2xl">Browse our competitive Mwiki deals and add items to your shopping cart. Product creation and photo uploads are restricted to the <strong class="text-slate-900">Admin Panel</strong>.</p>
+                </div>
+
+                <!-- Search & Admin Reset Controls -->
+                <div class="flex flex-wrap items-center gap-2.5">
+                    <div class="relative flex-1 sm:w-64">
+                        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-sm"></i>
+                        <input
+                            type="text"
+                            id="productSearchInput"
+                            placeholder="Search bread, oil, maize meal..."
+                            class="w-full pl-9 pr-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-sm focus:bg-white focus:ring-2 focus:ring-emerald-600 focus:border-emerald-600 outline-none transition"
+                        >
+                    </div>
+                    <button id="resetCatalogBtn" type="button" onclick="handleResetCatalogClick()" class="hidden px-3.5 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold transition" title="Restore default sample offers (Admin Only)">
+                        <i class="fa-solid fa-rotate-left mr-1"></i> Reset Defaults
+                    </button>
+                </div>
+            </div>
+
+            <!-- Interactive Department Tab Bar -->
+            <div class="flex flex-wrap items-center justify-between gap-3 pb-6 mb-8 border-b border-slate-200" role="tablist" aria-label="Supermarket Departments">
+                <div class="flex flex-wrap gap-2">
+                    <button type="button" data-tab="all" class="dept-tab active px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-emerald-700 text-white shadow-sm transition">
+                        All Offers (<span id="countAll">0</span>)
+                    </button>
+                    <button type="button" data-tab="produce" class="dept-tab px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-slate-100 text-slate-700 hover:bg-emerald-50 transition">
+                        Fresh Produce
+                    </button>
+                    <button type="button" data-tab="pantry" class="dept-tab px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-slate-100 text-slate-700 hover:bg-emerald-50 transition">
+                        Pantry &amp; Household
+                    </button>
+                    <button type="button" data-tab="deli" class="dept-tab px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-slate-100 text-slate-700 hover:bg-emerald-50 transition">
+                        Deli &amp; Bakery
+                    </button>
+                    <button type="button" data-tab="kids" class="dept-tab px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-slate-100 text-slate-700 hover:bg-emerald-50 transition">
+                        Kids &amp; Family
+                    </button>
+                </div>
+
+                <!-- "+ Add New Product" Button (Requires Admin Auth) -->
+                <button
+                    id="addProductTabBtn"
+                    type="button"
+                    onclick="handleAddProductClick()"
+                    class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs sm:text-sm font-extrabold bg-amber-400 hover:bg-amber-300 text-slate-950 shadow-md transition"
+                >
+                    <i class="fa-solid fa-lock text-xs" id="addProdLockBadge"></i>
+                    <span>+ Add New Product</span>
+                </button>
+            </div>
+
+            <!-- ADMIN-ONLY "+ ADD NEW PRODUCT" MANAGER PANEL -->
+            <div id="addProductPanel" class="hidden mb-10 bg-slate-50 rounded-3xl border-2 border-emerald-600/40 p-6 sm:p-8 shadow-xl">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 mb-6 border-b border-slate-200">
+                    <div>
+                        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-emerald-100 text-emerald-800 text-xs font-extrabold uppercase">
+                            <i class="fa-solid fa-user-shield"></i> Authenticated Admin Catalog Manager
+                        </span>
+                        <h3 class="font-display text-2xl font-extrabold text-slate-900 mt-1.5">Add a New Product &amp; Offer to Annex Mwiki</h3>
+                        <p class="text-sm text-slate-600">Upload a product photo, set your KES price and discount, and save straight to the live catalog.</p>
+                    </div>
+                    <button type="button" onclick="closeAddProductPanel()" class="self-start sm:self-auto px-4 py-2 rounded-xl bg-white border border-slate-300 hover:bg-slate-100 text-slate-700 text-xs font-bold transition">
+                        <i class="fa-solid fa-xmark mr-1"></i> Close Form
+                    </button>
+                </div>
+
+                <form id="newProductForm" class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                    <!-- Left 7 Columns: Product Details & Pricing -->
+                    <div class="lg:col-span-7 space-y-5">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-extrabold uppercase text-slate-700 mb-1.5">Product Name *</label>
+                                <input type="text" id="prodNameInput" required placeholder="e.g., Pembe Maize Meal (2 Kg)" class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-sm font-medium focus:ring-2 focus:ring-emerald-600 focus:border-emerald-600 outline-none">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-extrabold uppercase text-slate-700 mb-1.5">Department Category *</label>
+                                <select id="prodCategoryInput" class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-sm font-medium focus:ring-2 focus:ring-emerald-600 focus:border-emerald-600 outline-none">
+                                    <option value="pantry">Pantry &amp; Household</option>
+                                    <option value="produce">Fresh Produce</option>
+                                    <option value="deli">Deli &amp; Bakery</option>
+                                    <option value="kids">Kids &amp; Family</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                            <div>
+                                <label class="block text-xs font-extrabold uppercase text-slate-700 mb-1.5">Offer Price (KES) *</label>
+                                <input type="number" id="prodPriceInput" required min="1" step="1" placeholder="e.g., 160" class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-sm font-bold text-emerald-800 focus:ring-2 focus:ring-emerald-600 outline-none">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-extrabold uppercase text-slate-700 mb-1.5">Regular Price (KES)</label>
+                                <input type="number" id="prodOldPriceInput" min="1" step="1" placeholder="e.g., 195" class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-sm font-medium focus:ring-2 focus:ring-emerald-600 outline-none">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-extrabold uppercase text-slate-700 mb-1.5">Auto-Calculated Badge</label>
+                                <div id="liveBadgePreview" class="w-full px-4 py-3 rounded-xl bg-amber-100 border border-amber-300 text-amber-900 text-sm font-extrabold text-center">
+                                    NEW ARRIVAL
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-extrabold uppercase text-slate-700 mb-1.5">Description, Pack Size &amp; Allergen Info *</label>
+                            <input type="text" id="prodNoteInput" required placeholder="e.g., Fortified sifted maize meal • Limit 4 packets per customer" class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-sm focus:ring-2 focus:ring-emerald-600 outline-none">
+                        </div>
+
+                        <div class="pt-2 flex flex-wrap items-center gap-3">
+                            <button type="submit" class="px-6 py-3.5 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white font-extrabold text-sm shadow-lg transition flex items-center gap-2">
+                                <i class="fa-solid fa-check-circle text-amber-300"></i>
+                                <span>Save &amp; Publish Product</span>
+                            </button>
+                            <button type="button" onclick="resetProductForm()" class="px-5 py-3.5 rounded-xl bg-white border border-slate-300 hover:bg-slate-100 text-slate-700 font-bold text-sm transition">
+                                Clear Form
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Right 5 Columns: Product Photo Uploader & Live Preview -->
+                    <div class="lg:col-span-5 flex flex-col justify-between bg-white p-5 rounded-2xl border border-slate-200">
+                        <div>
+                            <label class="block text-xs font-extrabold uppercase text-slate-700 mb-2">Product Picture (Upload or Paste URL)</label>
+
+                            <!-- Live Preview Box -->
+                            <div class="relative h-44 w-full rounded-xl bg-slate-100 border-2 border-dashed border-slate-300 overflow-hidden flex items-center justify-center mb-3">
+                                <img id="prodImgPreview" src="" alt="Product preview" class="hidden w-full h-full object-cover">
+                                <div id="prodImgPlaceholder" class="text-center p-4">
+                                    <i class="fa-solid fa-cloud-arrow-up text-3xl text-emerald-600 mb-2"></i>
+                                    <p class="text-xs font-bold text-slate-700">Upload a crisp photo from your device</p>
+                                    <p class="text-[11px] text-slate-400 mt-0.5">JPG, PNG, or WebP supported</p>
+                                </div>
+                            </div>
+
+                            <!-- File Input Button + Image URL Input -->
+                            <div class="space-y-2.5">
+                                <label class="w-full cursor-pointer inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-300 font-bold text-xs transition">
+                                    <i class="fa-solid fa-folder-open"></i>
+                                    <span>Choose Product Photo from Device</span>
+                                    <input type="file" id="prodFileInput" accept="image/*" class="hidden">
+                                </label>
+
+                                <div class="relative">
+                                    <input type="url" id="prodUrlInput" placeholder="Or paste an image URL (https://...)" class="w-full px-3.5 py-2 rounded-xl bg-slate-50 border border-slate-200 text-xs focus:bg-white focus:ring-2 focus:ring-emerald-600 outline-none">
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="text-[11px] text-slate-400 mt-3">
+                            <i class="fa-solid fa-database text-emerald-600 mr-1"></i> Saved in your browser storage so products remain available across reloads.
+                        </p>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Deli Allergen & Ingredient Transparency Banner -->
+            <div id="deliSafetyBanner" class="mb-8 p-5 rounded-2xl bg-gradient-to-r from-emerald-950 to-emerald-900 text-white border border-emerald-700 shadow-md flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                <div class="flex items-start gap-4">
+                    <div class="w-11 h-11 rounded-xl bg-amber-400 text-slate-950 flex items-center justify-center shrink-0 text-lg mt-0.5">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div>
+                        <div class="flex flex-wrap items-center gap-2">
+                            <h3 class="font-display font-bold text-base sm:text-lg text-amber-300">Deli Allergen &amp; Ingredient Transparency Pledge</h3>
+                            <span class="text-[11px] font-extrabold uppercase px-2 py-0.5 rounded bg-emerald-800 text-emerald-200 border border-emerald-600">100% Verified Labels</span>
+                        </div>
+                        <p class="text-xs sm:text-sm text-emerald-100 mt-1 leading-relaxed">
+                            Every hot deli dish &amp; freshly baked loaf displays clear spice and allergen tags. Our counter staff verify directly with our kitchen chef before answering any ingredient inquiry—never guessing.
+                        </p>
+                    </div>
+                </div>
+                <button type="button" onclick="openFeedbackModal('Deli Ingredient Inquiry')" class="shrink-0 px-4 py-2.5 rounded-xl bg-white text-emerald-950 hover:bg-amber-400 font-extrabold text-xs sm:text-sm transition shadow-sm">
+                    Ask Deli Chef
+                </button>
+            </div>
+
+            <!-- Live Products Grid -->
+            <div id="productsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>
+
+            <!-- Empty Search State -->
+            <div id="emptyProductsState" class="hidden text-center py-14 px-4 bg-slate-50 rounded-2xl border border-slate-200 mt-6">
+                <i class="fa-solid fa-box-open text-4xl text-slate-300 mb-3"></i>
+                <h3 class="font-display font-bold text-lg text-slate-800">No matching products found</h3>
+                <p class="text-sm text-slate-500 mt-1">Try clearing your search filter or switching to another department tab.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. STORE EXPERIENCE, AMENITIES & GALLERY SHOWCASE -->
+    <section id="experience" class="py-16 sm:py-20 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+                <div>
+                    <span class="text-xs font-extrabold uppercase tracking-widest text-emerald-800 bg-emerald-100 px-3 py-1 rounded-full">Built for Kasarani &amp; Mwiki Families</span>
+                    <h2 class="mt-3 font-display text-3xl sm:text-4xl font-extrabold text-slate-900">Seamless Access &amp; Family Amenities</h2>
+                    <p class="mt-2 text-slate-600 max-w-2xl">Designed around real customer feedback: smooth entry and exit lanes, spacious dedicated parking, an organized on-site bodaboda stage, and kids' entertainment.</p>
+                </div>
+                <button type="button" onclick="handleCustomizeMediaClick('gallery1')" class="self-start md:self-auto inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white hover:bg-amber-50 text-slate-900 border border-slate-300 font-bold text-xs sm:text-sm shadow-sm transition">
+                    <i class="fa-solid fa-images text-amber-600"></i>
+                    <span>Manage Gallery Photos</span>
+                </button>
+            </div>
+
+            <!-- 4 Core Amenity Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-square-parking"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-lg text-slate-900">Dedicated Car Parking</h3>
+                    <p class="text-sm text-slate-600 mt-1.5 leading-relaxed">Generous on-site parking bays with clear markings so weekend family runs stay stress-free.</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-arrows-left-right"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-lg text-slate-900">Defined Entry &amp; Exit Lanes</h3>
+                    <p class="text-sm text-slate-600 mt-1.5 leading-relaxed">Separated arrival and departure flow along Kasarani Mwiki Rd to prevent bottlenecks at peak hours.</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-xl bg-sky-100 text-sky-800 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-motorcycle"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-lg text-slate-900">On-Site Bodaboda Stage</h3>
+                    <p class="text-sm text-slate-600 mt-1.5 leading-relaxed">Designated rider pick-up and drop-off bay right by the premises for quick bag-to-bike convenience.</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-xl bg-rose-100 text-rose-800 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-child-reaching"></i>
+                    </div>
+                    <h3 class="font-display font-bold text-lg text-slate-900">Kids' Bouncing Castle</h3>
+                    <p class="text-sm text-slate-600 mt-1.5 leading-relaxed">Fun play zone keeping little ones entertained while parents shop weekly essentials and fresh produce.</p>
+                </div>
+            </div>
+
+            <!-- Customizable 3-Slot Store Gallery Strip -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm group">
+                    <div class="relative h-52 bg-slate-100 overflow-hidden">
+                        <img id="galleryImg1" src="" alt="Spacious Parking & Entry Lane" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <button type="button" onclick="handleCustomizeMediaClick('gallery1')" class="absolute bottom-3 right-3 px-3 py-1.5 rounded-lg bg-slate-950/80 hover:bg-amber-400 text-white hover:text-slate-950 text-xs font-bold backdrop-blur-sm transition">
+                            <i class="fa-solid fa-pen mr-1"></i> Edit Photo
+                        </button>
+                    </div>
+                    <div class="p-4">
+                        <h4 class="font-display font-bold text-slate-900">Parking &amp; Entry/Exit Flow</h4>
+                        <p class="text-xs text-slate-500 mt-0.5">Easy access from Kasarani Mwiki Rd</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm group">
+                    <div class="relative h-52 bg-slate-100 overflow-hidden">
+                        <img id="galleryImg2" src="" alt="Fresh Aisles & Bakery" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <button type="button" onclick="handleCustomizeMediaClick('gallery2')" class="absolute bottom-3 right-3 px-3 py-1.5 rounded-lg bg-slate-950/80 hover:bg-amber-400 text-white hover:text-slate-950 text-xs font-bold backdrop-blur-sm transition">
+                            <i class="fa-solid fa-pen mr-1"></i> Edit Photo
+                        </button>
+                    </div>
+                    <div class="p-4">
+                        <h4 class="font-display font-bold text-slate-900">Fresh Produce, Deli &amp; Pantry</h4>
+                        <p class="text-xs text-slate-500 mt-0.5">Daily restocks &amp; transparent allergen tags</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm group">
+                    <div class="relative h-52 bg-slate-100 overflow-hidden">
+                        <img id="galleryImg3" src="" alt="Kids Bouncing Castle & Bodaboda Stage" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <button type="button" onclick="handleCustomizeMediaClick('gallery3')" class="absolute bottom-3 right-3 px-3 py-1.5 rounded-lg bg-slate-950/80 hover:bg-amber-400 text-white hover:text-slate-950 text-xs font-bold backdrop-blur-sm transition">
+                            <i class="fa-solid fa-pen mr-1"></i> Edit Photo
+                        </button>
+                    </div>
+                    <div class="p-4">
+                        <h4 class="font-display font-bold text-slate-900">Bouncing Castle &amp; Bodaboda Stage</h4>
+                        <p class="text-xs text-slate-500 mt-0.5">Family-friendly convenience on site</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SOCIAL & VIDEO DEAL HUB (YouTube, TikTok, Instagram, Facebook, X - Zero WhatsApp) -->
+    <section id="social-hub" class="py-16 sm:py-20 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-xs font-extrabold uppercase tracking-widest text-emerald-800 bg-emerald-100 px-3 py-1 rounded-full">Follow Our Daily Drops</span>
+                <h2 class="mt-3 font-display text-3xl sm:text-4xl font-extrabold text-slate-900">Catch Flash Offers on YouTube &amp; TikTok</h2>
+                <p class="mt-2 text-slate-600">See aisle walkthroughs, weekend price drops, and fresh deli specials across our official social channels.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="https://www.youtube.com/results?search_query=Powerstar+Supermarket+Nairobi" target="_blank" rel="noopener noreferrer" class="group rounded-2xl p-6 bg-slate-50 hover:bg-red-50/60 border border-slate-200 hover:border-red-200 transition flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-red-600 text-white flex items-center justify-center text-xl mb-4 shadow-sm">
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-slate-900 group-hover:text-red-700 transition">YouTube Store Tours</h3>
+                        <p class="text-sm text-slate-600 mt-2">Watch full basket comparisons, bulk household bundles, and Annex Mwiki store highlights.</p>
+                    </div>
+                    <span class="inline-flex items-center gap-1.5 text-xs font-extrabold text-red-700 mt-6">
+                        <span>Search YouTube</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </span>
+                </a>
+
+                <a href="https://www.tiktok.com/search?q=Powerstar%20Supermarket%20Nairobi" target="_blank" rel="noopener noreferrer" class="group rounded-2xl p-6 bg-slate-50 hover:bg-amber-50/70 border border-slate-200 hover:border-amber-300 transition flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-slate-950 text-amber-300 flex items-center justify-center text-xl mb-4 shadow-sm">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-slate-900 group-hover:text-amber-800 transition">TikTok Flash Specials</h3>
+                        <p class="text-sm text-slate-600 mt-2">Quick 30-second price checks on cooking oil, flour, rice, bakery loaves, and weekend promos.</p>
+                    </div>
+                    <span class="inline-flex items-center gap-1.5 text-xs font-extrabold text-slate-900 mt-6">
+                        <span>Explore TikTok</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </span>
+                </a>
+
+                <div class="rounded-2xl p-6 bg-emerald-950 text-white border border-emerald-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-2.5 mb-4">
+                            <a href="https://www.instagram.com/explore/tags/powerstarsupermarket/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-10 h-10 rounded-xl bg-white/10 hover:bg-pink-600 flex items-center justify-center transition">
+                                <i class="fa-brands fa-instagram text-lg"></i>
+                            </a>
+                            <a href="https://www.facebook.com/search/top?q=Powerstar%20Supermarket" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="w-10 h-10 rounded-xl bg-white/10 hover:bg-blue-600 flex items-center justify-center transition">
+                                <i class="fa-brands fa-facebook text-lg"></i>
+                            </a>
+                            <a href="https://x.com/search?q=Powerstar%20Supermarket" target="_blank" rel="noopener noreferrer" aria-label="X" class="w-10 h-10 rounded-xl bg-white/10 hover:bg-slate-700 flex items-center justify-center transition">
+                                <i class="fa-brands fa-x-twitter text-lg"></i>
+                            </a>
+                        </div>
+                        <h3 class="font-display font-bold text-xl text-amber-300">Community Updates</h3>
+                        <p class="text-sm text-emerald-100 mt-2">Stay tuned on Instagram, Facebook, and X for restock alerts, community news, and seasonal promotions.</p>
+                    </div>
+                    <button type="button" onclick="openFeedbackModal('Customer Feedback & Suggestion')" class="mt-6 w-full py-2.5 px-4 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-extrabold text-xs transition">
+                        Send Store Feedback
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. CUSTOMER REVIEWS & TRANSPARENT SERVICE -->
+    <section id="reviews" class="py-16 sm:py-20 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+                <div>
+                    <span class="text-xs font-extrabold uppercase tracking-widest text-emerald-800 bg-emerald-100 px-3 py-1 rounded-full">Verified Local Voices</span>
+                    <h2 class="mt-3 font-display text-3xl sm:text-4xl font-extrabold text-slate-900">Rated 3.8 ★ by Mwiki Shoppers</h2>
+                    <p class="mt-2 text-slate-600 max-w-2xl">We listen closely to neighborhood shoppers—celebrating competitive prices, parking space, and family convenience while continuously improving checkout speed and deli clarity.</p>
+                </div>
+                <button type="button" onclick="openFeedbackModal('Shopper Review')" class="self-start md:self-auto px-5 py-3 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-xs sm:text-sm shadow-sm transition">
+                    <i class="fa-solid fa-pen-to-square mr-1.5 text-amber-300"></i> Leave Store Feedback
+                </button>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
+                    <div class="flex items-center justify-between mb-3">
+                        <div class="text-amber-400 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                        </div>
+                        <span class="text-xs font-semibold text-slate-400">Kasarani Mwiki</span>
+                    </div>
+                    <p class="text-sm text-slate-700 leading-relaxed">"Great prices on household staples and plenty of room to park. Having a bodaboda stage right outside makes heading home with heavy bags super easy."</p>
+                    <div class="mt-4 text-xs font-bold text-slate-900">— Grace W., Regular Shopper</div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
+                    <div class="flex items-center justify-between mb-3">
+                        <div class="text-amber-400 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="text-xs font-semibold text-slate-400">Annex Mwiki</span>
+                    </div>
+                    <p class="text-sm text-slate-700 leading-relaxed">"My kids love the bouncing castle while I pick up bread, dairy, and produce. Open until 10 PM every day is a lifesaver after work."</p>
+                    <div class="mt-4 text-xs font-bold text-slate-900">— Brian K., Family Shopper</div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
+                    <div class="flex items-center justify-between mb-3">
+                        <div class="text-amber-400 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                        </div>
+                        <span class="text-xs font-semibold text-slate-400">Mwiki Road</span>
+                    </div>
+                    <p class="text-sm text-slate-700 leading-relaxed">"Good variety and fair prices. Evening queues can get busy, so opening extra tills during rush hours and keeping deli ingredient labels clear makes a big difference."</p>
+                    <div class="mt-4 text-xs font-bold text-slate-900">— Faith M., Local Customer</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. LOCATION, HOURS & SISTER BRANCHES -->
+    <section id="location" class="py-16 sm:py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                <div class="lg:col-span-6 space-y-6">
+                    <div>
+                        <span class="text-xs font-extrabold uppercase tracking-widest text-emerald-800 bg-emerald-100 px-3 py-1 rounded-full">Find Us Easily</span>
+                        <h2 class="mt-3 font-display text-3xl sm:text-4xl font-extrabold text-slate-900">Powerstar Supermarket • Annex Mwiki</h2>
+                        <p class="mt-2 text-slate-600">Conveniently located along Kasarani Mwiki Road with clear entry and exit lanes and dedicated customer parking.</p>
+                    </div>
+
+                    <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 space-y-4">
+                        <div class="flex items-start gap-3.5">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-map-pin"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs font-extrabold uppercase text-slate-500">Address &amp; Plus Code</div>
+                                <div class="font-bold text-slate-900">Kasarani Mwiki Rd, Nairobi • Plus Code: <span class="text-emerald-800">QWG7+J62</span></div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3.5">
+                            <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs font-extrabold uppercase text-slate-500">Operating Hours</div>
+                                <div class="font-bold text-slate-900">Monday – Sunday: 7:00 AM – 10:00 PM (Open 7 Days)</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3.5">
+                            <div class="w-10 h-10 rounded-xl bg-slate-200 text-slate-800 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-store"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs font-extrabold uppercase text-slate-500">Powerstar Retail Heritage</div>
+                                <div class="text-sm text-slate-700">24+ years serving Nairobi neighborhoods across Annex Mwiki and sister Powerstar locations with everyday value.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-3">
+                        <a href="https://www.google.com/maps/search/?api=1&query=QWG7%2BJ62+Kasarani+Mwiki+Rd+Nairobi" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-sm shadow-sm transition">
+                            <i class="fa-solid fa-route text-amber-300"></i>
+                            <span>Open in Google Maps (QWG7+J62)</span>
+                        </a>
+                        <button type="button" onclick="shareStorePromo('Powerstar Supermarket - Annex Mwiki (QWG7+J62)')" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-sm transition">
+                            <i class="fa-solid fa-copy"></i>
+                            <span>Copy Store Location Link</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Interactive Directions Card -->
+                <div class="lg:col-span-6 bg-gradient-to-br from-emerald-950 to-emerald-900 text-white rounded-3xl p-6 sm:p-8 border border-emerald-800 shadow-xl">
+                    <div class="flex items-center justify-between pb-4 mb-6 border-b border-emerald-800">
+                        <div>
+                            <span class="text-xs font-extrabold uppercase text-amber-300">Arrival Guide</span>
+                            <h3 class="font-display text-xl font-bold mt-0.5">Getting to Annex Mwiki</h3>
+                        </div>
+                        <span class="px-3 py-1 rounded-full bg-emerald-800 text-emerald-200 text-xs font-bold">QWG7+J62</span>
+                    </div>
+
+                    <ul class="space-y-4 text-sm text-emerald-100">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-car text-amber-400 mt-1"></i>
+                            <span><strong class="text-white">By Car:</strong> Follow Kasarani Mwiki Road to Annex Mwiki; use the marked Entry Lane into dedicated parking bays and exit smoothly via the Exit Lane.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-motorcycle text-amber-400 mt-1"></i>
+                            <span><strong class="text-white">By Bodaboda / Matatu:</strong> Ask for Powerstar Supermarket Annex Mwiki along Kasarani Mwiki Rd—riders can drop off and pick up at the dedicated stage.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-children text-amber-400 mt-1"></i>
+                            <span><strong class="text-white">Family Trips:</strong> Enjoy kids' bouncing castle access, fresh deli and bakery counters, and full pantry aisles in one stop.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-300 py-10 px-4 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+            <div class="flex items-center gap-2.5">
+                <span class="w-8 h-8 rounded-lg bg-emerald-800 text-amber-400 flex items-center justify-center">
+                    <i class="fa-solid fa-star"></i>
+                </span>
+                <div>
+                    <span class="font-display font-bold text-white text-sm">Powerstar Supermarket • Annex Mwiki</span>
+                    <span class="block text-slate-400">Kasarani Mwiki Rd (QWG7+J62) • Open 7AM–10PM Daily</span>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <button type="button" onclick="handleAdminPanelClick()" class="text-amber-300 hover:text-amber-200 font-bold transition">
+                    <i class="fa-solid fa-lock mr-1"></i> Admin Panel
+                </button>
+                <span class="text-slate-600">|</span>
+                <span class="text-slate-400">© <span id="currentYear"></span> Powerstar Supermarket</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===================================================================== -->
+    <!-- SLIDE-OUT SMART CART DRAWER                                           -->
+    <!-- ===================================================================== -->
+    <div id="cartDrawerBackdrop" class="hidden fixed inset-0 z-50 bg-slate-950/60 backdrop-blur-xs flex justify-end">
+        <div id="cartDrawerPanel" class="w-full max-w-md bg-white h-full shadow-2xl flex flex-col justify-between">
+            <div class="p-5 border-b border-slate-200 flex items-center justify-between bg-emerald-950 text-white">
+                <div class="flex items-center gap-2.5">
+                    <i class="fa-solid fa-cart-shopping text-amber-400 text-lg"></i>
+                    <div>
+                        <h3 class="font-display font-bold text-lg leading-tight">Your Shopping List</h3>
+                        <p class="text-[11px] text-emerald-200">Powerstar Annex Mwiki Estimate</p>
+                    </div>
+                </div>
+                <button id="closeCartBtn" type="button" aria-label="Close Cart" class="w-9 h-9 rounded-xl bg-white/10 hover:bg-white/20 flex items-center justify-center transition">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+
+            <div id="cartItemsContainer" class="flex-1 overflow-y-auto p-5 space-y-3"></div>
+
+            <div class="p-5 border-t border-slate-200 bg-slate-50 space-y-4">
+                <div class="flex items-center justify-between">
+                    <span class="text-sm font-bold text-slate-600">Estimated Total</span>
+                    <span id="cartTotalDisplay" class="font-display text-2xl font-extrabold text-emerald-800">KES 0</span>
+                </div>
+                <div class="grid grid-cols-2 gap-2.5">
+                    <button id="clearCartBtn" type="button" class="py-3 px-4 rounded-xl bg-white border border-slate-300 hover:bg-slate-100 text-slate-700 font-bold text-xs transition">
+                        Clear List
+                    </button>
+                    <button id="copyCartBtn" type="button" class="py-3 px-4 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white font-extrabold text-xs shadow-sm transition">
+                        <i class="fa-solid fa-copy mr-1 text-amber-300"></i> Copy List
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================================================================== -->
+    <!-- ADMIN PASSWORD MODAL (PASSWORD: 12345)                                -->
+    <!-- ===================================================================== -->
+    <div id="adminAuthModal" class="hidden fixed inset-0 z-50 bg-slate-950/70 backdrop-blur-xs flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-7 shadow-2xl border border-slate-200">
+            <div class="flex items-start justify-between gap-3 mb-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-11 h-11 rounded-2xl bg-slate-950 text-amber-400 flex items-center justify-center text-lg">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-display text-xl font-extrabold text-slate-900">Admin Panel Login</h3>
+                        <p class="text-xs text-slate-500">Restricted access for store management only</p>
+                    </div>
+                </div>
+                <button type="button" onclick="closeAdminAuthModal()" aria-label="Close Admin Login" class="w-8 h-8 rounded-lg hover:bg-slate-100 text-slate-500 flex items-center justify-center">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <p id="adminAuthReason" class="text-xs sm:text-sm text-slate-600 bg-amber-50 border border-amber-200 rounded-xl p-3 mb-4">
+                Customers can browse offers and build a shopping list, but only the Admin can add/delete products or change cover &amp; gallery images.
+            </p>
+
+            <form id="adminPasswordForm" class="space-y-4">
+                <div>
+                    <label for="adminPasswordInput" class="block text-xs font-extrabold uppercase text-slate-700 mb-1.5">Enter Admin Password</label>
+                    <input
+                        type="password"
+                        id="adminPasswordInput"
+                        required
+                        autocomplete="current-password"
+                        placeholder="Enter password"
+                        class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 text-sm font-semibold focus:bg-white focus:ring-2 focus:ring-emerald-600 outline-none"
+                    >
+                    <p id="adminPasswordError" class="hidden text-xs font-bold text-rose-600 mt-1.5">
+                        <i class="fa-solid fa-circle-exclamation mr-1"></i> Incorrect password. Please try again.
+                    </p>
+                </div>
+
+                <div class="flex items-center justify-end gap-2.5 pt-1">
+                    <button type="button" onclick="closeAdminAuthModal()" class="px-4 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold transition">
+                        Cancel
+                    </button>
+                    <button type="submit" class="px-5 py-2.5 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white text-xs sm:text-sm font-extrabold shadow-md transition">
+                        <i class="fa-solid fa-unlock mr-1.5 text-amber-300"></i> Unlock Admin Panel
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- ===================================================================== -->
+    <!-- ADMIN MEDIA CUSTOMIZATION MODAL (COVER & GALLERY IMAGES)               -->
+    <!-- ===================================================================== -->
+    <div id="mediaModal" class="hidden fixed inset-0 z-50 bg-slate-950/70 backdrop-blur-xs flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-7 shadow-2xl border border-slate-200">
+            <div class="flex items-center justify-between pb-4 mb-5 border-b border-slate-100">
+                <div>
+                    <span class="text-[11px] font-extrabold uppercase text-emerald-700 bg-emerald-100 px-2.5 py-0.5 rounded-full">Admin Media Manager</span>
+                    <h3 id="mediaModalTitle" class="font-display text-xl font-extrabold text-slate-900 mt-1">Update Store Photo</h3>
+                </div>
+                <button type="button" onclick="closeMediaModal()" aria-label="Close Media Modal" class="w-9 h-9 rounded-xl hover:bg-slate-100 text-slate-500 flex items-center justify-center">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+
+            <form id="mediaForm" class="space-y-4">
+                <div>
+                    <label for="mediaSlotSelect" class="block text-xs font-extrabold uppercase text-slate-700 mb-1.5">Image Slot</label>
+                    <select id="mediaSlotSelect" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-sm font-semibold focus:ring-2 focus:ring-emerald-600 outline-none">
+                        <option value="cover">Main Cover Page Image (Hero)</option>
+                        <option value="gallery1">Gallery 1: Parking &amp; Entry/Exit Flow</option>
+                        <option value="gallery2">Gallery 2: Fresh Produce, Deli &amp; Pantry</option>
+                        <option value="gallery3">Gallery 3: Bouncing Castle &amp; Bodaboda Stage</option>
+                    </select>
+                </div>
+
+                <div class="h-44 w-full rounded-2xl bg-slate-100 border border-slate-200 overflow-hidden flex items-center justify-center">
+                    <img id="mediaPreviewImg" src="" alt="Selected photo preview" class="w-full h-full object-cover">
+                </div>
+
+                <div class="space-y-2.5">
+                    <label class="w-full cursor-pointer inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-amber-50 hover:bg-amber-100 text-amber-950 border border-amber-300 font-bold text-xs transition">
+                        <i class="fa-solid fa-upload"></i>
+                        <span>Upload Photo from Computer / Phone</span>
+                        <input type="file" id="mediaFileInput" accept="image/*" class="hidden">
+                    </label>
+                    <input type="url" id="mediaUrlInput" placeholder="Or paste an image URL (https://...)" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-xs focus:bg-white focus:ring-2 focus:ring-emerald-600 outline-none">
+                </div>
+
+                <div id="coverCaptionFields" class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+                    <div>
+                        <label class="block text-[11px] font-extrabold uppercase text-slate-600 mb-1">Cover Headline</label>
+                        <input type="text" id="coverTitleInput" class="w-full px-3 py-2 rounded-xl bg-slate-50 border border-slate-300 text-xs font-semibold outline-none focus:ring-2 focus:ring-emerald-600">
+                    </div>
+                    <div>
+                        <label class="block text-[11px] font-extrabold uppercase text-slate-600 mb-1">Cover Subtext</label>
+                        <input type="text" id="coverSubInput" class="w-full px-3 py-2 rounded-xl bg-slate-50 border border-slate-300 text-xs font-semibold outline-none focus:ring-2 focus:ring-emerald-600">
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-between gap-2 pt-3 border-t border-slate-100">
+                    <button type="button" onclick="resetSelectedMediaSlot()" class="px-3.5 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold transition">
+                        Default Photo
+                    </button>
+                    <div class="flex items-center gap-2">
+                        <button type="button" onclick="closeMediaModal()" class="px-4 py-2.5 rounded-xl bg-white border border-slate-300 hover:bg-slate-50 text-slate-700 text-xs font-bold transition">
+                            Cancel
+                        </button>
+                        <button type="submit" class="px-5 py-2.5 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white text-xs sm:text-sm font-extrabold shadow-md transition">
+                            Save Photo
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- ===================================================================== -->
+    <!-- CUSTOMER FEEDBACK / DELI CHEF MODAL                                   -->
+    <!-- ===================================================================== -->
+    <div id="feedbackModal" class="hidden fixed inset-0 z-50 bg-slate-950/65 backdrop-blur-xs flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-7 shadow-2xl border border-slate-200">
+            <div class="flex items-center justify-between pb-3 mb-4 border-b border-slate-100">
+                <h3 id="feedbackModalTitle" class="font-display text-lg font-extrabold text-slate-900">Store Feedback</h3>
+                <button type="button" onclick="closeFeedbackModal()" aria-label="Close Feedback Modal" class="w-8 h-8 rounded-lg hover:bg-slate-100 text-slate-500 flex items-center justify-center">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <form id="feedbackForm" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-extrabold uppercase text-slate-700 mb-1">Your Name</label>
+                    <input type="text" id="feedbackNameInput" required placeholder="e.g., Samuel Njoroge" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-sm outline-none focus:ring-2 focus:ring-emerald-600">
+                </div>
+                <div>
+                    <label class="block text-xs font-extrabold uppercase text-slate-700 mb-1">Message / Question</label>
+                    <textarea id="feedbackMsgInput" rows="3" required placeholder="Ask about deli ingredients, parking, or share feedback on Annex Mwiki..." class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-sm outline-none focus:ring-2 focus:ring-emerald-600"></textarea>
+                </div>
+                <div class="flex justify-end gap-2">
+                    <button type="button" onclick="closeFeedbackModal()" class="px-4 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold">Cancel</button>
+                    <button type="submit" class="px-5 py-2.5 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-extrabold">Submit Note</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Toast Notification Banner (Replaces alert() cleanly) -->
+    <div id="toastBanner" class="hidden fixed bottom-5 left-1/2 -translate-x-1/2 z-[60] max-w-md w-[92%] sm:w-auto px-5 py-3.5 rounded-2xl bg-slate-950 text-white border border-emerald-500/40 shadow-2xl flex items-center gap-3 text-xs sm:text-sm font-bold">
+        <i id="toastIcon" class="fa-solid fa-circle-check text-amber-400 text-base shrink-0"></i>
+        <span id="toastMessage">Saved</span>
+    </div>
+
+    <script>
+        // =====================================================================
+        // 1. CONFIGURATION, DEFAULT DATA & STATE MANAGEMENT
+        // =====================================================================
+        const ADMIN_PASSWORD_CODE = '12345';
+        const STORAGE_KEYS = {
+            PRODUCTS: 'powerstar_mwiki_products_v1',
+            CART: 'powerstar_mwiki_cart_v1',
+            MEDIA: 'powerstar_mwiki_media_v1',
+            ADMIN_UNLOCKED: 'powerstar_mwiki_admin_session_v1'
+        };
+
+        /**
+         * Generates a clean, crisp SVG data URI so default store and product
+         * images load reliably with zero broken external image dependencies.
+         */
+        function makeSvgDataUrl(title, subtitle, bgStart, bgEnd, accent) {
+            const safeTitle = String(title).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+            const safeSub = String(subtitle).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+            const svg = `
+                <svg xmlns="http://www.w3.org/2000/svg" width="800" height="520" viewBox="0 0 800 520">
+                    <defs>
+                        <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="${bgStart}"/>
+                            <stop offset="100%" stop-color="${bgEnd}"/>
+                        </linearGradient>
+                    </defs>
+                    <rect width="800" height="520" fill="url(#g)"/>
+                    <circle cx="670" cy="110" r="130" fill="${accent}" fill-opacity="0.16"/>
+                    <circle cx="130" cy="430" r="160" fill="#ffffff" fill-opacity="0.08"/>
+                    <rect x="48" y="48" width="704" height="424" rx="28" fill="none" stroke="#ffffff" stroke-opacity="0.18" stroke-width="2"/>
+                    <text x="80" y="135" fill="${accent}" font-family="Arial, sans-serif" font-size="22" font-weight="bold" letter-spacing="2">POWERSTAR • ANNEX MWIKI</text>
+                    <text x="80" y="255" fill="#ffffff" font-family="Arial, sans-serif" font-size="46" font-weight="bold">${safeTitle}</text>
+                    <text x="80" y="312" fill="#e2e8f0" font-family="Arial, sans-serif" font-size="24">${safeSub}</text>
+                    <rect x="80" y="365" width="230" height="46" rx="12" fill="${accent}"/>
+                    <text x="195" y="395" text-anchor="middle" fill="#0f172a" font-family="Arial, sans-serif" font-size="18" font-weight="bold">KASARANI MWIKI RD</text>
+                </svg>
+            `.trim();
+            return 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(svg);
+        }
+
+        const DEFAULT_MEDIA = {
+            cover: makeSvgDataUrl('Powerstar Annex Mwiki', 'Parking • Entry/Exit Lanes • Bouncing Castle', '#022c22', '#065f46', '#fbbf24'),
+            coverTitle: 'Powerstar Supermarket - Annex Mwiki',
+            coverSub: 'Spacious parking, kids’ bouncing castle & daily mega savers under one roof.',
+            gallery1: makeSvgDataUrl('Dedicated Parking & Lanes', 'Clear Entry & Exit Flow + Bodaboda Stage', '#0f172a', '#1e3a8a', '#fbbf24'),
+            gallery2: makeSvgDataUrl('Fresh Produce & Bakery', 'Daily Restocks & Allergen Transparency', '#064e3b', '#047857', '#fde047'),
+            gallery3: makeSvgDataUrl('Kids Bouncing Castle', 'Family Fun While You Shop Weekly Deals', '#311042', '#701a75', '#fbbf24')
+        };
+
+        const DEFAULT_PRODUCTS = [
+            {
+                id: 'prod-1',
+                name: 'Golden Cooking Oil (2 Litres)',
+                category: 'pantry',
+                price: 585,
+                oldPrice: 660,
+                badge: 'SAVE 11%',
+                note: 'Pure vegetable oil • Kitchen staple offer',
+                image: makeSvgDataUrl('Cooking Oil 2L', 'Household Pantry Saver', '#064e3b', '#0f766e', '#fbbf24'),
+                isCustom: false
+            },
+            {
+                id: 'prod-2',
+                name: 'Sifted Maize Meal (2 Kg)',
+                category: 'pantry',
+                price: 165,
+                oldPrice: 195,
+                badge: 'WEEKLY DEAL',
+                note: 'Fortified white maize meal • Family pack',
+                image: makeSvgDataUrl('Maize Meal 2Kg', 'Daily Ugali Essential', '#1e293b', '#334155', '#fbbf24'),
+                isCustom: false
+            },
+            {
+                id: 'prod-3',
+                name: 'Fresh Farm Tomatoes & Sukuma Bundle',
+                category: 'produce',
+                price: 120,
+                oldPrice: 150,
+                badge: 'FRESH PICK',
+                note: 'Morning produce restock • Washed & sorted',
+                image: makeSvgDataUrl('Fresh Produce', 'Farm Tomatoes & Greens', '#14532d', '#15803d', '#fde047'),
+                isCustom: false
+            },
+            {
+                id: 'prod-4',
+                name: 'Soft White Sliced Bread (400g)',
+                category: 'deli',
+                price: 65,
+                oldPrice: 70,
+                badge: 'BAKERY FRESH',
+                note: 'Contains wheat & gluten • Baked daily',
+                image: makeSvgDataUrl('Fresh Bakery Bread', 'Contains Wheat/Gluten • Daily Bake', '#451a03', '#92400e', '#fbbf24'),
+                isCustom: false
+            },
+            {
+                id: 'prod-5',
+                name: 'Spiced Deli Chicken Quarter & Chips',
+                category: 'deli',
+                price: 380,
+                oldPrice: 430,
+                badge: 'HOT DELI',
+                note: 'Allergen tag verified with kitchen chef',
+                image: makeSvgDataUrl('Hot Deli Combo', 'Verified Ingredient & Allergen Label', '#7c2d12', '#b45309', '#fde047'),
+                isCustom: false
+            },
+            {
+                id: 'prod-6',
+                name: 'Bouncing Castle Fun Pass + Juice Pack',
+                category: 'kids',
+                price: 250,
+                oldPrice: 300,
+                badge: 'KIDS COMBO',
+                note: 'On-site play session + 200ml fruit juice',
+                image: makeSvgDataUrl('Kids Family Combo', 'Bouncing Castle + Refreshment', '#4c1d95', '#6d28d9', '#fbbf24'),
+                isCustom: false
+            }
+        ];
+
+        let isAdminAuthenticated = false;
+        let products = [];
+        let cart = [];
+        let mediaState = { ...DEFAULT_MEDIA };
+        let activeDepartmentTab = 'all';
+        let searchQuery = '';
+        let pendingAdminAction = null; // Stores callback when customer clicks an Admin-only control
+        let uploadedProductImageDataUrl = '';
+        let uploadedMediaImageDataUrl = '';
+
+        // =====================================================================
+        // 2. SAFE STORAGE & INITIALIZATION
+        // =====================================================================
+        function loadInitialState() {
+            try {
+                isAdminAuthenticated = sessionStorage.getItem(STORAGE_KEYS.ADMIN_UNLOCKED) === 'true';
+            } catch (e) {
+                isAdminAuthenticated = false;
+            }
+
+            try {
+                const savedProducts = localStorage.getItem(STORAGE_KEYS.PRODUCTS);
+                if (savedProducts) {
+                    const parsed = JSON.parse(savedProducts);
+                    if (Array.isArray(parsed) && parsed.length > 0) {
+                        products = parsed;
+                    } else {
+                        products = [...DEFAULT_PRODUCTS];
+                    }
+                } else {
+                    products = [...DEFAULT_PRODUCTS];
+                }
+            } catch (e) {
+                products = [...DEFAULT_PRODUCTS];
+            }
+
+            try {
+                const savedCart = localStorage.getItem(STORAGE_KEYS.CART);
+                cart = savedCart ? JSON.parse(savedCart) : [];
+                if (!Array.isArray(cart)) cart = [];
+            } catch (e) {
+                cart = [];
+            }
+
+            try {
+                const savedMedia = localStorage.getItem(STORAGE_KEYS.MEDIA);
+                if (savedMedia) {
+                    mediaState = { ...DEFAULT_MEDIA, ...JSON.parse(savedMedia) };
+                }
+            } catch (e) {
+                mediaState = { ...DEFAULT_MEDIA };
+            }
+        }
+
+        function saveProductsToStorage() {
+            try {
+                localStorage.setItem(STORAGE_KEYS.PRODUCTS, JSON.stringify(products));
+            } catch (e) {
+                showToast('Storage limit reached for large images. Try a smaller photo or image URL.', 'error');
+            }
+        }
+
+        function saveCartToStorage() {
+            try {
+                localStorage.setItem(STORAGE_KEYS.CART, JSON.stringify(cart));
+            } catch (e) {
+                // Ignore storage quota issues on cart
+            }
+        }
+
+        function saveMediaToStorage() {
+            try {
+                localStorage.setItem(STORAGE_KEYS.MEDIA, JSON.stringify(mediaState));
+            } catch (e) {
+                showToast('Image too large for browser storage. Try a smaller image or URL.', 'error');
+            }
+        }
+
+        // =====================================================================
+        // 3. STRICT ADMIN AUTHENTICATION (PASSWORD: 12345)
+        // =====================================================================
+        function syncAdminUI() {
+            const lockIcon = document.getElementById('adminLockIcon');
+            const btnText = document.getElementById('adminPanelBtnText');
+            const mobileAdminLabel = document.getElementById('mobileAdminLabel');
+            const sessionBanner = document.getElementById('adminSessionBanner');
+            const adminPhotosBtn = document.getElementById('adminPhotosBtn');
+            const adminAddProdBtn = document.getElementById('adminAddProdBtn');
+            const resetCatalogBtn = document.getElementById('resetCatalogBtn');
+            const addProdLockBadge = document.getElementById('addProdLockBadge');
+            const addProductPanel = document.getElementById('addProductPanel');
+
+            if (isAdminAuthenticated) {
+                if (lockIcon) lockIcon.className = 'fa-solid fa-unlock text-emerald-400';
+                if (btnText) btnText.textContent = 'Admin (Unlocked)';
+                if (mobileAdminLabel) mobileAdminLabel.textContent = 'Admin Panel (Unlocked — Click to Lock)';
+                if (sessionBanner) sessionBanner.classList.remove('hidden');
+                if (adminPhotosBtn) adminPhotosBtn.classList.remove('hidden');
+                if (adminAddProdBtn) adminAddProdBtn.classList.remove('hidden');
+                if (resetCatalogBtn) resetCatalogBtn.classList.remove('hidden');
+                if (addProdLockBadge) addProdLockBadge.className = 'fa-solid fa-plus-circle text-xs';
+            } else {
+                if (lockIcon) lockIcon.className = 'fa-solid fa-lock text-amber-400';
+                if (btnText) btnText.textContent = 'Admin Panel';
+                if (mobileAdminLabel) mobileAdminLabel.textContent = 'Admin Panel (Password 12345)';
+                if (sessionBanner) sessionBanner.classList.add('hidden');
+                if (adminPhotosBtn) adminPhotosBtn.classList.add('hidden');
+                if (adminAddProdBtn) adminAddProdBtn.classList.add('hidden');
+                if (resetCatalogBtn) resetCatalogBtn.classList.add('hidden');
+                if (addProdLockBadge) addProdLockBadge.className = 'fa-solid fa-lock text-xs';
+                if (addProductPanel) addProductPanel.classList.add('hidden');
+            }
+
+            renderProductsGrid();
+        }
+
+        function handleAdminPanelClick() {
+            if (isAdminAuthenticated) {
+                lockAdminSession();
+            } else {
+                openAdminAuthModal('Enter the Admin Panel password (12345) to manage products and store photos.', null);
+            }
+        }
+
+        function openAdminAuthModal(reasonText, callbackOnSuccess) {
+            pendingAdminAction = callbackOnSuccess || null;
+            const reasonEl = document.getElementById('adminAuthReason');
+            const inputEl = document.getElementById('adminPasswordInput');
+            const errorEl = document.getElementById('adminPasswordError');
+            const modal = document.getElementById('adminAuthModal');
+
+            if (reasonEl && reasonText) reasonEl.textContent = reasonText;
+            if (errorEl) errorEl.classList.add('hidden');
+            if (inputEl) {
+                inputEl.value = '';
+                setTimeout(() => inputEl.focus(), 50);
+            }
+            if (modal) modal.classList.remove('hidden');
+        }
+
+        function closeAdminAuthModal() {
+            pendingAdminAction = null;
+            const modal = document.getElementById('adminAuthModal');
+            const errorEl = document.getElementById('adminPasswordError');
+            if (errorEl) errorEl.classList.add('hidden');
+            if (modal) modal.classList.add('hidden');
+        }
+
+        function lockAdminSession() {
+            isAdminAuthenticated = false;
+            try {
+                sessionStorage.removeItem(STORAGE_KEYS.ADMIN_UNLOCKED);
+            } catch (e) {}
+            const addProductPanel = document.getElementById('addProductPanel');
+            if (addProductPanel) addProductPanel.classList.add('hidden');
+            closeMediaModal();
+            syncAdminUI();
+            showToast('Admin Panel locked. Storefront is now in customer view.', 'info');
+        }
+
+        function requireAdmin(reasonMessage, actionFn) {
+            if (isAdminAuthenticated) {
+                actionFn();
+            } else {
+                openAdminAuthModal(reasonMessage, actionFn);
+            }
+        }
+
+        // =====================================================================
+        // 4. MEDIA RENDERING & ADMIN PHOTO CUSTOMIZATION (COVER + GALLERY)
+        // =====================================================================
+        function renderMediaAssets() {
+            const heroCoverImg = document.getElementById('heroCoverImg');
+            const heroCaptionTitle = document.getElementById('heroCaptionTitle');
+            const heroCaptionSub = document.getElementById('heroCaptionSub');
+            const gallery1 = document.getElementById('galleryImg1');
+            const gallery2 = document.getElementById('galleryImg2');
+            const gallery3 = document.getElementById('galleryImg3');
+
+            if (heroCoverImg) heroCoverImg.src = mediaState.cover || DEFAULT_MEDIA.cover;
+            if (heroCaptionTitle) heroCaptionTitle.textContent = mediaState.coverTitle || DEFAULT_MEDIA.coverTitle;
+            if (heroCaptionSub) heroCaptionSub.textContent = mediaState.coverSub || DEFAULT_MEDIA.coverSub;
+            if (gallery1) gallery1.src = mediaState.gallery1 || DEFAULT_MEDIA.gallery1;
+            if (gallery2) gallery2.src = mediaState.gallery2 || DEFAULT_MEDIA.gallery2;
+            if (gallery3) gallery3.src = mediaState.gallery3 || DEFAULT_MEDIA.gallery3;
+        }
+
+        function handleCustomizeMediaClick(slotKey) {
+            requireAdmin(
+                'Only the store Admin can change the cover page image or gallery photos. Enter password to continue.',
+                () => openMediaModal(slotKey)
+            );
+        }
+
+        function openMediaModal(slotKey) {
+            if (!isAdminAuthenticated) return;
+            uploadedMediaImageDataUrl = '';
+            const modal = document.getElementById('mediaModal');
+            const slotSelect = document.getElementById('mediaSlotSelect');
+            const urlInput = document.getElementById('mediaUrlInput');
+            const fileInput = document.getElementById('mediaFileInput');
+            const titleInput = document.getElementById('coverTitleInput');
+            const subInput = document.getElementById('coverSubInput');
+
+            const validSlot = ['cover', 'gallery1', 'gallery2', 'gallery3'].includes(slotKey) ? slotKey : 'cover';
+            if (slotSelect) slotSelect.value = validSlot;
+            if (urlInput) urlInput.value = '';
+            if (fileInput) fileInput.value = '';
+            if (titleInput) titleInput.value = mediaState.coverTitle || DEFAULT_MEDIA.coverTitle;
+            if (subInput) subInput.value = mediaState.coverSub || DEFAULT_MEDIA.coverSub;
+
+            updateMediaModalPreviewAndFields();
+            if (modal) modal.classList.remove('hidden');
+        }
+
+        function closeMediaModal() {
+            uploadedMediaImageDataUrl = '';
+            const modal = document.getElementById('mediaModal');
+            if (modal) modal.classList.add('hidden');
+        }
+
+        function updateMediaModalPreviewAndFields() {
+            const slotSelect = document.getElementById('mediaSlotSelect');
+            const previewImg = document.getElementById('mediaPreviewImg');
+            const captionFields = document.getElementById('coverCaptionFields');
+            const modalTitle = document.getElementById('mediaModalTitle');
+            const slot = slotSelect ? slotSelect.value : 'cover';
+
+            if (captionFields) {
+                captionFields.classList.toggle('hidden', slot !== 'cover');
+            }
+            if (modalTitle) {
+                modalTitle.textContent = slot === 'cover' ? 'Customize Cover Page Image' : 'Customize Gallery Photo';
+            }
+            if (previewImg) {
+                previewImg.src = uploadedMediaImageDataUrl || mediaState[slot] || DEFAULT_MEDIA[slot];
+            }
+        }
+
+        function resetSelectedMediaSlot() {
+            if (!isAdminAuthenticated) return;
+            const slotSelect = document.getElementById('mediaSlotSelect');
+            const slot = slotSelect ? slotSelect.value : 'cover';
+            uploadedMediaImageDataUrl = '';
+            mediaState[slot] = DEFAULT_MEDIA[slot];
+            if (slot === 'cover') {
+                mediaState.coverTitle = DEFAULT_MEDIA.coverTitle;
+                mediaState.coverSub = DEFAULT_MEDIA.coverSub;
+            }
+            saveMediaToStorage();
+            renderMediaAssets();
+            updateMediaModalPreviewAndFields();
+            showToast('Restored default photo for selected slot.', 'info');
+        }
+
+        // =====================================================================
+        // 5. CATALOG RENDERING, DEPARTMENT FILTERING & ADMIN PRODUCT CREATION
+        // =====================================================================
+        function getCategoryLabel(cat) {
+            const labels = {
+                produce: 'Fresh Produce',
+                pantry: 'Pantry & Household',
+                deli: 'Deli & Bakery',
+                kids: 'Kids & Family'
+            };
+            return labels[cat] || 'Store Offer';
+        }
+
+        function formatKes(amount) {
+            const num = Number(amount) || 0;
+            return 'KES ' + num.toLocaleString('en-KE');
+        }
+
+        function renderProductsGrid() {
+            const grid = document.getElementById('productsGrid');
+            const emptyState = document.getElementById('emptyProductsState');
+            const countAllEl = document.getElementById('countAll');
+
+            if (countAllEl) {
+                countAllEl.textContent = String(products.length);
+            }
+
+            const normalizedQuery = searchQuery.trim().toLowerCase();
+            const filtered = products.filter((item) => {
+                const matchesTab = activeDepartmentTab === 'all' || item.category === activeDepartmentTab;
+                const matchesSearch =
+                    !normalizedQuery ||
+                    item.name.toLowerCase().includes(normalizedQuery) ||
+                    item.note.toLowerCase().includes(normalizedQuery) ||
+                    getCategoryLabel(item.category).toLowerCase().includes(normalizedQuery);
+                return matchesTab && matchesSearch;
+            });
+
+            if (!grid) return;
+            grid.innerHTML = '';
+
+            if (filtered.length === 0) {
+                if (emptyState) emptyState.classList.remove('hidden');
+                return;
+            }
+            if (emptyState) emptyState.classList.add('hidden');
+
+            filtered.forEach((product) => {
+                const card = document.createElement('article');
+                card.className = 'bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-lg transition flex flex-col justify-between group';
+
+                const oldPriceHtml = product.oldPrice && Number(product.oldPrice) > Number(product.price)
+                    ? `<span class="text-xs text-slate-400 line-through ml-2">${formatKes(product.oldPrice)}</span>`
+                    : '';
+
+                // Only show Delete button when Admin is authenticated
+                const adminDeleteHtml = isAdminAuthenticated
+                    ? `<button type="button" onclick="deleteProductById('${product.id}')" aria-label="Delete ${product.name}" title="Delete product (Admin)" class="w-8 h-8 rounded-lg bg-rose-50 hover:bg-rose-600 text-rose-600 hover:text-white flex items-center justify-center transition border border-rose-200">
+                           <i class="fa-solid fa-trash-can text-xs"></i>
+                       </button>`
+                    : '';
+
+                card.innerHTML = `
+                    <div>
+                        <div class="relative h-48 bg-slate-100 overflow-hidden">
+                            <img src="${product.image}" alt="${product.name}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-3 left-3 px-2.5 py-1 rounded-lg bg-amber-400 text-slate-950 text-[11px] font-extrabold shadow-xs">
+                                ${product.badge || 'OFFER'}
+                            </span>
+                            <span class="absolute bottom-3 left-3 px-2.5 py-0.5 rounded-md bg-slate-950/75 text-white text-[10px] font-bold backdrop-blur-xs">
+                                ${getCategoryLabel(product.category)}
+                            </span>
+                        </div>
+                        <div class="p-5">
+                            <div class="flex items-start justify-between gap-2">
+                                <h3 class="font-display font-bold text-base sm:text-lg text-slate-900 leading-snug">${product.name}</h3>
+                                ${adminDeleteHtml}
+                            </div>
+                            <p class="text-xs text-slate-500 mt-1.5 leading-relaxed">${product.note}</p>
+                        </div>
+                    </div>
+
+                    <div class="px-5 pb-5 pt-2 flex items-center justify-between gap-3 border-t border-slate-100">
+                        <div>
+                            <span class="font-display font-extrabold text-lg text-emerald-800">${formatKes(product.price)}</span>
+                            ${oldPriceHtml}
+                        </div>
+                        <button type="button" onclick="addProductToCart('${product.id}')" class="inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-extrabold shadow-xs transition">
+                            <i class="fa-solid fa-cart-plus text-amber-300"></i>
+                            <span>Add</span>
+                        </button>
+                    </div>
+                `;
+
+                grid.appendChild(card);
+            });
+        }
+
+        function handleAddProductClick() {
+            requireAdmin(
+                'Customers cannot add products to the store. Enter the Admin Panel password to add a new product.',
+                () => {
+                    const panel = document.getElementById('addProductPanel');
+                    if (panel) {
+                        panel.classList.remove('hidden');
+                        panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                    const nameInput = document.getElementById('prodNameInput');
+                    if (nameInput) setTimeout(() => nameInput.focus(), 120);
+                }
+            );
+        }
+
+        function closeAddProductPanel() {
+            const panel = document.getElementById('addProductPanel');
+            if (panel) panel.classList.add('hidden');
+        }
+
+        function deleteProductById(productId) {
+            if (!isAdminAuthenticated) {
+                openAdminAuthModal('Only the Admin can delete products from the catalog.', null);
+                return;
+            }
+            products = products.filter((p) => p.id !== productId);
+            saveProductsToStorage();
+            renderProductsGrid();
+            showToast('Product removed from catalog.', 'info');
+        }
+
+        function handleResetCatalogClick() {
+            requireAdmin(
+                'Only the Admin can reset the store catalog back to default products.',
+                () => {
+                    products = [...DEFAULT_PRODUCTS];
+                    saveProductsToStorage();
+                    renderProductsGrid();
+                    showToast('Catalog restored to default Powerstar offers.', 'info');
+                }
+            );
+        }
+
+        function updateBadgePreview() {
+            const priceVal = Number(document.getElementById('prodPriceInput')?.value) || 0;
+            const oldPriceVal = Number(document.getElementById('prodOldPriceInput')?.value) || 0;
+            const badgeEl = document.getElementById('liveBadgePreview');
+            if (!badgeEl) return;
+
+            if (oldPriceVal > priceVal && priceVal > 0) {
+                const pct = Math.round(((oldPriceVal - priceVal) / oldPriceVal) * 100);
+                badgeEl.textContent = pct > 0 ? `SAVE ${pct}%` : 'SPECIAL OFFER';
+            } else {
+                badgeEl.textContent = 'NEW ARRIVAL';
+            }
+        }
+
+        function resetProductForm() {
+            const form = document.getElementById('newProductForm');
+            if (form) form.reset();
+            uploadedProductImageDataUrl = '';
+            const imgPreview = document.getElementById('prodImgPreview');
+            const imgPlaceholder = document.getElementById('prodImgPlaceholder');
+            if (imgPreview) {
+                imgPreview.src = '';
+                imgPreview.classList.add('hidden');
+            }
+            if (imgPlaceholder) imgPlaceholder.classList.remove('hidden');
+            updateBadgePreview();
+        }
+
+        // =====================================================================
+        // 6. SMART SHOPPING CART DRAWER
+        // =====================================================================
+        function addProductToCart(productId) {
+            const found = products.find((p) => p.id === productId);
+            if (!found) return;
+
+            const existing = cart.find((item) => item.id === productId);
+            if (existing) {
+                existing.qty += 1;
+            } else {
+                cart.push({
+                    id: found.id,
+                    name: found.name,
+                    price: Number(found.price) || 0,
+                    qty: 1
+                });
+            }
+            saveCartToStorage();
+            renderCartUI();
+            showToast(`Added "${found.name}" to your shopping list.`, 'success');
+        }
+
+        function updateCartQty(productId, delta) {
+            const idx = cart.findIndex((item) => item.id === productId);
+            if (idx === -1) return;
+            cart[idx].qty += delta;
+            if (cart[idx].qty <= 0) {
+                cart.splice(idx, 1);
+            }
+            saveCartToStorage();
+            renderCartUI();
+        }
+
+        function clearCart() {
+            cart = [];
+            saveCartToStorage();
+            renderCartUI();
+            showToast('Shopping list cleared.', 'info');
+        }
+
+        function renderCartUI() {
+            const badge = document.getElementById('listBadge');
+            const container = document.getElementById('cartItemsContainer');
+            const totalDisplay = document.getElementById('cartTotalDisplay');
+
+            const totalQty = cart.reduce((sum, item) => sum + (Number(item.qty) || 0), 0);
+            const totalAmount = cart.reduce((sum, item) => sum + (Number(item.price) || 0) * (Number(item.qty) || 0), 0);
+
+            if (badge) badge.textContent = String(totalQty);
+            if (totalDisplay) totalDisplay.textContent = formatKes(totalAmount);
+
+            if (!container) return;
+            if (cart.length === 0) {
+                container.innerHTML = `
+                    <div class="text-center py-12 px-4">
+                        <i class="fa-solid fa-basket-shopping text-4xl text-slate-300 mb-3"></i>
+                        <p class="font-display font-bold text-slate-800">Your shopping list is empty</p>
+                        <p class="text-xs text-slate-500 mt-1">Tap "Add" on any weekly offer to estimate your basket.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            container.innerHTML = cart.map((item) => `
+                <div class="flex items-center justify-between gap-3 p-3.5 rounded-2xl bg-slate-50 border border-slate-200">
+                    <div class="min-w-0">
+                        <h4 class="font-bold text-sm text-slate-900 truncate">${item.name}</h4>
+                        <p class="text-xs font-semibold text-emerald-700 mt-0.5">${formatKes(item.price)} each</p>
+                    </div>
+                    <div class="flex items-center gap-2 shrink-0">
+                        <button type="button" onclick="updateCartQty('${item.id}', -1)" aria-label="Decrease quantity" class="w-7 h-7 rounded-lg bg-white border border-slate-300 hover:bg-slate-100 text-slate-700 font-bold text-xs flex items-center justify-center">-</button>
+                        <span class="w-6 text-center text-xs font-extrabold text-slate-900">${item.qty}</span>
+                        <button type="button" onclick="updateCartQty('${item.id}', 1)" aria-label="Increase quantity" class="w-7 h-7 rounded-lg bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-xs flex items-center justify-center">+</button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function openCartDrawer() {
+            const backdrop = document.getElementById('cartDrawerBackdrop');
+            if (backdrop) backdrop.classList.remove('hidden');
+        }
+
+        function closeCartDrawer() {
+            const backdrop = document.getElementById('cartDrawerBackdrop');
+            if (backdrop) backdrop.classList.add('hidden');
+        }
+
+        function copyTextToClipboard(text, successMsg) {
+            const tempArea = document.createElement('textarea');
+            tempArea.value = text;
+            tempArea.setAttribute('readonly', '');
+            tempArea.style.position = 'fixed';
+            tempArea.style.opacity = '0';
+            document.body.appendChild(tempArea);
+            tempArea.select();
+            try {
+                document.execCommand('copy');
+                showToast(successMsg || 'Copied to clipboard!', 'success');
+            } catch (err) {
+                showToast('Unable to copy automatically in this browser.', 'error');
+            }
+            document.body.removeChild(tempArea);
+        }
+
+        // =====================================================================
+        // 7. FEEDBACK MODAL, SHARE HELPERS & TOAST NOTIFICATIONS
+        // =====================================================================
+        function openFeedbackModal(titleText) {
+            const modal = document.getElementById('feedbackModal');
+            const titleEl = document.getElementById('feedbackModalTitle');
+            if (titleEl && titleText) titleEl.textContent = titleText;
+            if (modal) modal.classList.remove('hidden');
+        }
+
+        function closeFeedbackModal() {
+            const modal = document.getElementById('feedbackModal');
+            const form = document.getElementById('feedbackForm');
+            if (form) form.reset();
+            if (modal) modal.classList.add('hidden');
+        }
+
+        function shareStorePromo(label) {
+            copyTextToClipboard(
+                `${label} • Kasarani Mwiki Rd (Plus Code: QWG7+J62) • Open 7AM–10PM Daily`,
+                'Store location & details copied!'
+            );
+        }
+
+        function closeMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            if (menu) menu.classList.add('hidden');
+        }
+
+        let toastTimer = null;
+        function showToast(message, type = 'success') {
+            const toast = document.getElementById('toastBanner');
+            const msgEl = document.getElementById('toastMessage');
+            const iconEl = document.getElementById('toastIcon');
+            if (!toast || !msgEl) return;
+
+            msgEl.textContent = message;
+            if (iconEl) {
+                if (type === 'error') {
+                    iconEl.className = 'fa-solid fa-circle-exclamation text-rose-400 text-base shrink-0';
+                } else if (type === 'info') {
+                    iconEl.className = 'fa-solid fa-circle-info text-sky-400 text-base shrink-0';
+                } else {
+                    iconEl.className = 'fa-solid fa-circle-check text-amber-400 text-base shrink-0';
+                }
+            }
+
+            toast.classList.remove('hidden');
+            if (toastTimer) clearTimeout(toastTimer);
+            toastTimer = setTimeout(() => {
+                toast.classList.add('hidden');
+            }, 3400);
+        }
+
+        // =====================================================================
+        // 8. EVENT LISTENERS & BOOTSTRAP
+        // =====================================================================
+        function bindEvents() {
+            // Mobile menu toggle
+            document.getElementById('mobileMenuBtn')?.addEventListener('click', () => {
+                document.getElementById('mobileMenu')?.classList.toggle('hidden');
+            });
+
+            // Cart drawer controls
+            document.getElementById('openListBtn')?.addEventListener('click', openCartDrawer);
+            document.getElementById('closeCartBtn')?.addEventListener('click', closeCartDrawer);
+            document.getElementById('cartDrawerBackdrop')?.addEventListener('click', (e) => {
+                if (e.target === e.currentTarget) closeCartDrawer();
+            });
+            document.getElementById('clearCartBtn')?.addEventListener('click', clearCart);
+            document.getElementById('copyCartBtn')?.addEventListener('click', () => {
+                if (cart.length === 0) {
+                    showToast('Your shopping list is empty.', 'info');
+                    return;
+                }
+                const lines = cart.map((item) => `• ${item.name} x${item.qty} (${formatKes(item.price * item.qty)})`);
+                const total = cart.reduce((sum, item) => sum + item.price * item.qty, 0);
+                copyTextToClipboard(
+                    `Powerstar Annex Mwiki List:\n${lines.join('\n')}\nEstimated Total: ${formatKes(total)}`,
+                    'Shopping list copied!'
+                );
+            });
+
+            // Department tabs
+            document.querySelectorAll('.dept-tab[data-tab]').forEach((btn) => {
+                btn.addEventListener('click', () => {
+                    const tab = btn.getAttribute('data-tab');
+                    if (!tab) return;
+                    activeDepartmentTab = tab;
+                    document.querySelectorAll('.dept-tab[data-tab]').forEach((b) => {
+                        b.classList.remove('active', 'bg-emerald-700', 'text-white', 'shadow-sm');
+                        b.classList.add('bg-slate-100', 'text-slate-700');
+                    });
+                    btn.classList.remove('bg-slate-100', 'text-slate-700');
+                    btn.classList.add('active', 'bg-emerald-700', 'text-white', 'shadow-sm');
+                    renderProductsGrid();
+                });
+            });
+
+            // Search input
+            document.getElementById('productSearchInput')?.addEventListener('input', (e) => {
+                searchQuery = e.target.value || '';
+                renderProductsGrid();
+            });
+
+            // Live badge preview when creating a product
+            document.getElementById('prodPriceInput')?.addEventListener('input', updateBadgePreview);
+            document.getElementById('prodOldPriceInput')?.addEventListener('input', updateBadgePreview);
+
+            // Product image file upload
+            document.getElementById('prodFileInput')?.addEventListener('change', (e) => {
+                const file = e.target.files && e.target.files[0];
+                if (!file) return;
+                const reader = new FileReader();
+                reader.onload = () => {
+                    uploadedProductImageDataUrl = String(reader.result || '');
+                    const imgPreview = document.getElementById('prodImgPreview');
+                    const imgPlaceholder = document.getElementById('prodImgPlaceholder');
+                    if (imgPreview && uploadedProductImageDataUrl) {
+                        imgPreview.src = uploadedProductImageDataUrl;
+                        imgPreview.classList.remove('hidden');
+                    }
+                    if (imgPlaceholder) imgPlaceholder.classList.add('hidden');
+                };
+                reader.readAsDataURL(file);
+            });
+
+            // Product image URL preview
+            document.getElementById('prodUrlInput')?.addEventListener('input', (e) => {
+                const url = (e.target.value || '').trim();
+                const imgPreview = document.getElementById('prodImgPreview');
+                const imgPlaceholder = document.getElementById('prodImgPlaceholder');
+                if (url) {
+                    uploadedProductImageDataUrl = url;
+                    if (imgPreview) {
+                        imgPreview.src = url;
+                        imgPreview.classList.remove('hidden');
+                    }
+                    if (imgPlaceholder) imgPlaceholder.classList.add('hidden');
+                }
+            });
+
+            // New Product Form submission (Admin only)
+            document.getElementById('newProductForm')?.addEventListener('submit', (e) => {
+                e.preventDefault();
+                if (!isAdminAuthenticated) {
+                    openAdminAuthModal('Only the Admin can publish new products.', null);
+                    return;
+                }
+
+                const name = (document.getElementById('prodNameInput')?.value || '').trim();
+                const category = document.getElementById('prodCategoryInput')?.value || 'pantry';
+                const price = Number(document.getElementById('prodPriceInput')?.value) || 0;
+                const oldPriceRaw = Number(document.getElementById('prodOldPriceInput')?.value) || 0;
+                const note = (document.getElementById('prodNoteInput')?.value || '').trim();
+                const urlVal = (document.getElementById('prodUrlInput')?.value || '').trim();
+
+                if (!name || price <= 0 || !note) {
+                    showToast('Please enter product name, valid KES price, and description.', 'error');
+                    return;
+                }
+
+                let badge = 'NEW ARRIVAL';
+                if (oldPriceRaw > price) {
+                    const pct = Math.round(((oldPriceRaw - price) / oldPriceRaw) * 100);
+                    badge = pct > 0 ? `SAVE ${pct}%` : 'OFFER';
+                }
+
+                const chosenImage =
+                    uploadedProductImageDataUrl ||
+                    urlVal ||
+                    makeSvgDataUrl(name, getCategoryLabel(category), '#064e3b', '#047857', '#fbbf24');
+
+                const newItem = {
+                    id: 'prod-' + Date.now(),
+                    name,
+                    category,
+                    price,
+                    oldPrice: oldPriceRaw > price ? oldPriceRaw : null,
+                    badge,
+                    note,
+                    image: chosenImage,
+                    isCustom: true
+                };
+
+                products.unshift(newItem);
+                saveProductsToStorage();
+                resetProductForm();
+                renderProductsGrid();
+                showToast(`"${name}" published to Annex Mwiki catalog!`, 'success');
+            });
+
+            // Admin password form submission
+            document.getElementById('adminPasswordForm')?.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const inputEl = document.getElementById('adminPasswordInput');
+                const errorEl = document.getElementById('adminPasswordError');
+                const entered = (inputEl?.value || '').trim();
+
+                if (entered === ADMIN_PASSWORD_CODE) {
+                    isAdminAuthenticated = true;
+                    try {
+                        sessionStorage.setItem(STORAGE_KEYS.ADMIN_UNLOCKED, 'true');
+                    } catch (err) {}
+                    if (errorEl) errorEl.classList.add('hidden');
+                    const actionToRun = pendingAdminAction;
+                    closeAdminAuthModal();
+                    syncAdminUI();
+                    showToast('Admin Panel unlocked.', 'success');
+                    if (typeof actionToRun === 'function') {
+                        actionToRun();
+                    }
+                } else {
+                    if (errorEl) errorEl.classList.remove('hidden');
+                    if (inputEl) {
+                        inputEl.select();
+                        inputEl.focus();
+                    }
+                }
+            });
+
+            // Media slot selector & upload listeners (Admin only)
+            document.getElementById('mediaSlotSelect')?.addEventListener('change', () => {
+                uploadedMediaImageDataUrl = '';
+                updateMediaModalPreviewAndFields();
+            });
+
+            document.getElementById('mediaFileInput')?.addEventListener('change', (e) => {
+                const file = e.target.files && e.target.files[0];
+                if (!file) return;
+                const reader = new FileReader();
+                reader.onload = () => {
+                    uploadedMediaImageDataUrl = String(reader.result || '');
+                    updateMediaModalPreviewAndFields();
+                };
+                reader.readAsDataURL(file);
+            });
+
+            document.getElementById('mediaUrlInput')?.addEventListener('input', (e) => {
+                const val = (e.target.value || '').trim();
+                uploadedMediaImageDataUrl = val;
+                updateMediaModalPreviewAndFields();
+            });
+
+            document.getElementById('mediaForm')?.addEventListener('submit', (e) => {
+                e.preventDefault();
+                if (!isAdminAuthenticated) {
+                    openAdminAuthModal('Only the Admin can save cover or gallery photos.', null);
+                    return;
+                }
+
+                const slot = document.getElementById('mediaSlotSelect')?.value || 'cover';
+                const urlInputVal = (document.getElementById('mediaUrlInput')?.value || '').trim();
+                const finalImg = uploadedMediaImageDataUrl || urlInputVal || mediaState[slot] || DEFAULT_MEDIA[slot];
+
+                mediaState[slot] = finalImg;
+                if (slot === 'cover') {
+                    const titleVal = (document.getElementById('coverTitleInput')?.value || '').trim();
+                    const subVal = (document.getElementById('coverSubInput')?.value || '').trim();
+                    if (titleVal) mediaState.coverTitle = titleVal;
+                    if (subVal) mediaState.coverSub = subVal;
+                }
+
+                saveMediaToStorage();
+                renderMediaAssets();
+                closeMediaModal();
+                showToast('Store photo updated and saved!', 'success');
+            });
+
+            // Feedback form submission
+            document.getElementById('feedbackForm')?.addEventListener('submit', (e) => {
+                e.preventDefault();
+                closeFeedbackModal();
+                showToast('Thank you! Your message has been noted for Powerstar Annex Mwiki.', 'success');
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const yearEl = document.getElementById('currentYear');
+            if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+
+            loadInitialState();
+            renderMediaAssets();
+            renderCartUI();
+            bindEvents();
+            syncAdminUI();
+        });
+    </script>
+</body>
+</html>
